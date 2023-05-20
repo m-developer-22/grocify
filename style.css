@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main
+{
+    width: 100%;
+    height: 100%;
+    background-color: #01041e;
+    overflow: hidden;
+    /* background-color: #dadada; */
+}
+#main #nav
+{
+    width: 100%;
+    height: 11vh;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 400px;
+}
+#main #nav img
+{
+    width: 140px;
+}
+#main #nav #links
+{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+#main #nav #links a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+#main #nav #links a::after
+{
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    left: -2px;
+    bottom: -5px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#main #nav #links a:hover::after
+{
+    width: 110%;
+}
+#main #content
+{
+    width: 100%;
+    height: 89vh;
+    /* background-color: yellow; */
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+#main #content #left
+{
+    height: 100%;
+    width: 45%;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+}
+#main #content #left h1
+{
+    color: rgba(255, 255, 255, 0.714);
+    font-size: 55px;
+    font-weight: 600;
+}
+#main #content #left h1 span
+{
+    font-weight: 200;
+}
+#main #content #left>p
+{
+    color: rgba(255, 255, 255, 0.714);
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#main #content #left #btns
+{
+    display: flex;
+}
+#main #content #left #btns .order
+{
+    width: 150px;
+    height: 45px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    background-color: rgba(144, 135, 12, 0.795);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    cursor: pointer;
+}
+#main #content #left #btns .order p
+{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+    color: rgba(255, 255, 255, 0.714);
+    font-size: 15px;
+}
+#main #content #left #btns .order:hover p
+{
+    color: black;
+}
+#main #content #right
+{
+    height: 100%;
+    width: 55%;
+    /* background-color: green; */
+}
+#main #content #right img
+{
+    height: 100%;
+}
+
+
+
+
+
+
+
+@media(max-width:600px) 
+{
+    #main
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    #main #nav
+    {
+        width: 100%;
+        height: 11vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+    #main #nav img
+    {
+        width: 120px;
+        margin-right: 130px;
+    }
+    #main #nav #links
+    {
+        display: flex;
+        align-items: center;
+        display: none;
+    }
+    #main #content
+{
+    width: 100%;
+    height: fit-content;
+    /* background-color: peachpuff; */
+    display: flex;
+    flex-direction: column-reverse;
+    font-family: 'Poppins', sans-serif;
+}
+#main #content #right
+{
+    height: 65vh;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main #content #right img
+{
+    width: 110%;
+    height: auto;
+}
+
+
+#main #content #left
+{
+    width: 100%;
+    height: 65vh;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+#main #content #left h1
+{
+    color: rgba(255, 255, 255, 0.714);
+    font-size: 55px;
+    font-weight: 600;
+    text-align: center;
+}
+#main #content #left h1 span
+{
+    font-weight: 200;
+}
+#main #content #left>p
+{
+    color: rgba(255, 255, 255, 0.714);
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 90%;
+}
+#main #content #left #btns
+{
+    display: flex;
+}
+#main #content #left #btns .order
+{
+    width: 150px;
+    height: 45px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    background-color: rgba(144, 135, 12, 0.795);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    cursor: pointer;
+}
+#main #content #left #btns .order p
+{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+    color: rgba(255, 255, 255, 0.714);
+    font-size: 15px;
+}
+}
